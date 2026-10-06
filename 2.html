@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singer Music Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #fce4ec, #e3f2fd);
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        .checkbox-group {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(180px, 1fr));
+            gap: 10px;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: normal;
+            margin-top: 0;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            margin: 0;
+        }
+
+        button {
+            background: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Singer Music Knowledge Form</h2>
+
+        <form>
+            <label for="singerName">Singer Name:</label>
+            <input type="text" id="singerName" name="singerName" placeholder="Enter singer name">
+
+            <label for="stageName">Stage Name:</label>
+            <input type="text" id="stageName" name="stageName" placeholder="Enter stage name">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="100">
+
+            <label for="language">Main Music Language:</label>
+            <select id="language" name="language">
+                <option value="">Select a language</option>
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="tamil">Tamil</option>
+                <option value="telugu">Telugu</option>
+                <option value="kannada">Kannada</option>
+                <option value="malayalam">Malayalam</option>
+                <option value="spanish">Spanish</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label>Types of Music They Know:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="music" value="classical"> Classical</label>
+                <label><input type="checkbox" name="music" value="pop"> Pop</label>
+                <label><input type="checkbox" name="music" value="rock"> Rock</label>
+                <label><input type="checkbox" name="music" value="jazz"> Jazz</label>
+                <label><input type="checkbox" name="music" value="folk"> Folk</label>
+                <label><input type="checkbox" name="music" value="hiphop"> Hip-Hop</label>
+                <label><input type="checkbox" name="music" value="blues"> Blues</label>
+                <label><input type="checkbox" name="music" value="edm"> EDM</label>
+                <label><input type="checkbox" name="music" value="devotional"> Devotional</label>
+                <label><input type="checkbox" name="music" value="film"> Film Songs</label>
+                <label><input type="checkbox" name="music" value="indie"> Indie</label>
+                <label><input type="checkbox" name="music" value="gospel"> Gospel</label>
+            </div>
+
+            <label for="experience">Years of Singing Experience:</label>
+            <input type="text" id="experience" name="experience" placeholder="Example: 5 years">
+
+            <label for="comments">Additional Notes:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Mention any special music style or performance experience..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+

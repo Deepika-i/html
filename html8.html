@@ -1,0 +1,217 @@
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetri IT Solutions</title>
+</head>
+<body>
+    <h1>Student Feedback Form</h1>
+    <form>
+        <label for="name">TraineeName:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="Course">Course:</label>
+        <select >
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+        </select><br><br>
+     
+
+        <label for="feedback">Feedback:</label><br>
+        <textarea name="feedback" id="feedback" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html> 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Solutions - Student Feedback</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #f5f5f5);
+            color: #222;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0b3d91;
+            margin-bottom: 25px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        form {
+            display: grid;
+            gap: 18px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #1b1b1b;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #0b3d91;
+            box-shadow: 0 0 5px rgba(11, 61, 145, 0.2);
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .rating {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .rating label {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        button {
+            background: #0b3d91;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background: #072b63;
+        }
+
+        @media (max-width: 600px) {
+            .row {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                margin: 20px 15px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>IT Solutions Student Feedback Form</h1>
+        <p class="subtitle">We value your learning experience and would love to hear your feedback.</p>
+
+        <form>
+            <div class="row">
+                <div>
+                    <label for="name">Student Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label for="course">Course</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select a course</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JavaScript</option>
+                        <option>Python</option>
+                        <option>Java</option>
+                        <option>SQL</option>
+                        <option>Cyber Security</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="batch">Batch</label>
+                    <input type="text" id="batch" name="batch" placeholder="Example: IT-2026-A">
+                </div>
+            </div>
+
+            <div>
+                <label>Overall Satisfaction</label>
+                <div class="rating">
+                    <label><input type="radio" name="rating" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating" value="Good"> Good</label>
+                    <label><input type="radio" name="rating" value="Average"> Average</label>
+                    <label><input type="radio" name="rating" value="Poor"> Poor</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="trainer">Trainer / Instructor</label>
+                <input type="text" id="trainer" name="trainer" placeholder="Name of your trainer">
+            </div>
+
+            <div>
+                <label for="feedback">Feedback</label>
+                <textarea id="feedback" name="feedback" placeholder="Share your experience, strengths, and suggestions for improvement..." required></textarea>
+            </div>
+
+            <div>
+                <label for="improve">What should we improve?</label>
+                <textarea id="improve" name="improve" placeholder="Tell us what can be improved in the course"></textarea>
+            </div>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .gallery img
+    {
+        width: 200px;
+        height: 200px;
+      
+    }
+    @media (max-width: 768px) {
+        .gallery {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 480px) {
+        .gallery {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+        <img src="images.jpeg" alt="Image 1">
+        <img src="images.jpeg" alt="Image 2">
+        <img src="images.jpeg" alt="Image 3">
+        <img src="images.jpeg" alt="Image 4">
+        <img src="images.jpeg" alt="Image 5">
+        <img src="images.jpeg" alt="Image 6">
+        <img src="images.jpeg" alt="Image 7">
+    </div>
+</body>
+</html>

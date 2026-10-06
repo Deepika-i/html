@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+</head>
+<style>
+    img {
+        width: 300px;
+        height: 300px;
+       
+    }
+    .card, .card2, .card3 {
+        border: 1px solid black;
+        padding: 10px;
+        text-align : center;
+        height: 400px;
+        width: 300px;
+        background-color: rgb(182, 18, 18);
+        color: white;
+    }
+
+    .container
+    {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px;
+        gap: 20px;
+        
+       
+    }
+    .card:hover, .card2:hover, .card3:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+        background-color: rgb(136, 0, 255);
+        box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2);
+      
+    }
+    @media (max-width: 480px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="sam.jpeg" alt="samsung">
+            <h2>Samsung s22 Ultra</h2>
+            <p>₹1,29,999</p>
+        </div>
+        <div class="card2">
+            <img src="sam.jpeg" alt="apple">
+            <h2>Apple iPhone 14 Pro Max</h2>
+            <p>₹1,39,999</p>
+        </div>
+        <data class="card3">
+            <img src="sam.jpeg" alt="oneplus">
+            <h2>OnePlus 11</h2>
+            <p>₹69,999</p>
+    </div>
+</body>
+</html> 

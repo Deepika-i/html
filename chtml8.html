@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 48px 20px;
+      font-family: Arial, sans-serif;
+      color: #1f2937;
+      background: #f3f4f6;
+    }
+
+    .pricing-section {
+      max-width: 1080px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .pricing-section h1 {
+      margin: 0 0 10px;
+      font-size: 2.25rem;
+    }
+
+    .subtitle {
+      margin: 0 0 36px;
+      color: #6b7280;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .card {
+      padding: 30px 24px;
+      text-align: left;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgb(0 0 0 / 5%);
+    }
+
+    .card.featured {
+      border: 2px solid #4f46e5;
+      transform: translateY(-8px);
+    }
+
+    .plan-name {
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+    }
+
+    .price {
+      margin: 0 0 8px;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .price span {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #6b7280;
+    }
+
+    .description {
+      min-height: 42px;
+      margin: 0 0 24px;
+      color: #6b7280;
+    }
+
+    .features {
+      margin: 0 0 28px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .features li {
+      margin: 14px 0;
+    }
+
+    .features li::before {
+      content: "✓";
+      margin-right: 10px;
+      color: #4f46e5;
+      font-weight: 700;
+    }
+
+    .button {
+      display: block;
+      padding: 12px 16px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      background: #4f46e5;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: #4338ca;
+    }
+
+    @media (max-width: 768px) {
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card.featured {
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="pricing-section">
+    <h1>Choose Your Plan</h1>
+    <p class="subtitle">Simple pricing for every stage of your journey.</p>
+
+    <div class="pricing-grid">
+      <article class="card">
+        <h2 class="plan-name">Basic</h2>
+        <p class="price">$9<span>/month</span></p>
+        <p class="description">A great start for personal projects.</p>
+        <ul class="features">
+          <li>1 project</li>
+          <li>5 GB storage</li>
+          <li>Email support</li>
+        </ul>
+        <a class="button" href="#basic">Choose Basic</a>
+      </article>
+
+      <article class="card featured">
+        <h2 class="plan-name">Pro</h2>
+        <p class="price">$19<span>/month</span></p>
+        <p class="description">More tools for growing teams.</p>
+        <ul class="features">
+          <li>10 projects</li>
+          <li>50 GB storage</li>
+          <li>Priority support</li>
+        </ul>
+        <a class="button" href="#pro">Choose Pro</a>
+      </article>
+
+      <article class="card">
+        <h2 class="plan-name">Premium</h2>
+        <p class="price">$39<span>/month</span></p>
+        <p class="description">Full features for larger businesses.</p>
+        <ul class="features">
+          <li>Unlimited projects</li>
+          <li>500 GB storage</li>
+          <li>24/7 support</li>
+        </ul>
+        <a class="button" href="#premium">Choose Premium</a>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
